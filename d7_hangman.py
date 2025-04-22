@@ -13,6 +13,12 @@ for i in range(0, len(selected_word)):
 lives = 3
 win = False
 
+def won_the_game():
+    print("Congrats! You won the game!")
+
+def lost_the_game():
+    print("Game Over. Try again next time!")
+
 while lives != 0 or win == False:
     letter = input('Guess a letter: ').islower
 
